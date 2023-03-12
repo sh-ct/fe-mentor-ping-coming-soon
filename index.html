@@ -1,34 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="CSS/styles.css">
 
-  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | Ping coming soon page</title>
+    <title>Frontend Mentor | Ping coming soon page</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
-</head>
-<body>
+  </head>
+  <body>
+    <main class="flex-group coming-soon">
 
-  We are launching soon!
+      <img class="coming-soon__logo" src="images/logo.svg" alt="PING company logo, the word PING in bold blocky letters">
+      
+      <h1 class="coming-soon__title">We are launching <span class="bold text-dark">soon!</span></h1>
 
-  Subscribe and get notified
+      <p class="coming-soon__subtitle text-dark">Subscribe and get notified</p>
 
-  Notify Me
+      <form action="#" class="flex-group form">
+        <div class="form__input-group">
+          <input aria-labelledby="email address" type="text" class="form__input" placeholder="Your email address...">
+          <small><em class="form__error-message"></em></small>
+        </div>
+        <button class="form__button bold">Notify Me</button>
+      </form>
 
-  &copy; Copyright Ping. All rights reserved.
+      <img class="coming-soon__image" src="images/illustration-dashboard.png" alt="Dashboard showing example plots with a menu on the left, a green decorative block on the left side and a dotted background decoration flowing from behind on the left and bottom right corner.">
+      
+      <div class="flex-group coming-soon__icons">
+        <i class="fa-brands fa-facebook-f"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+      </div>
 
-  <footer>
-    <p class="attribution">
-      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
-    </p>
-  </footer>
-</body>
+      <p class="coming-soon__copywrite">&copy; Copyright Ping. All rights reserved.</p>
+
+    </main>
+
+  <script src="scripts.js"></script>
+  <script src="https://kit.fontawesome.com/b780b99934.js" crossorigin="anonymous"></script>
+  </body>
 </html>

@@ -1,5 +1,5 @@
 # Front-end Style Guide
-
+1.25rem
 ## Layout
 
 The designs were created to the following widths:
